@@ -139,9 +139,9 @@ class Signup extends StatelessWidget {
                         buttonText: "Sign up",
                         backColor: Colors.green.shade900,
                         textColor: Colors.white,
-                        //   onPresse: () {
-                        //   print("Signed up!");
-                        // },
+                        onPressed: () {
+                          print("Signed up!");
+                        },
                       ),
                       SizedBox(
                         height: height * 0.0125,

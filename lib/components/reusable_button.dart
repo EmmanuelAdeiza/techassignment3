@@ -2,27 +2,25 @@ import 'package:flutter/material.dart';
 // import 'dart:io';
 
 class ReusableButton extends StatelessWidget {
-   ReusableButton({
-
-    required this.height,
-    required this.width,
-    required this.buttonText,
-    required this.backColor,
-    required this.textColor,
-   this.onPresse
-  });
+  ReusableButton(
+      {required this.height,
+      required this.width,
+      required this.buttonText,
+      required this.backColor,
+      required this.textColor,
+      required this.onPressed});
 
   final double height;
   final double width;
   final String buttonText;
   final Color textColor;
   final Color backColor;
-   final Function? onPresse;
+  final Function onPressed;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      // onTap: onPresse(,
+      onTap: () => onPressed(),
       child: Container(
         height: height * 0.05,
         width: width * 0.8,

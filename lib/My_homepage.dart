@@ -47,9 +47,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 buttonText: "Sign up",
                 textColor: Colors.green,
                 backColor: Colors.white,
-                // onPresse: () {
-                //   Navigator.pushNamed(context, '/signup');
-                // },
+                onPressed: () {
+                  Navigator.pushNamed(context, '/signup');
+                },
               ),
               SizedBox(
                 height: height * 0.025,
@@ -60,9 +60,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 buttonText: "Login",
                 textColor: Colors.white,
                 backColor: Colors.green,
-                // onPresse: () {
-                //   Navigator.pushNamed(context, '/login');
-                // },
+                onPressed: () {
+                  Navigator.pushNamed(context, '/login');
+                },
               ),
             ],
           ),
